@@ -2,6 +2,10 @@
 GENERAL
 ***************************************************/
 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 /*set page widths for screen sizes*/
 #wrapper {
   max-width: 300px;
@@ -31,6 +35,48 @@ HEADING
   margin: 0;
 }
 
+h1 {
+  font-family: 'Oleo Script', cursive;
+  margin: 15px 0;
+  font-size: 3.5em;
+  font-weight: normal;
+  line-height: 0.8em;
+  padding: 15px 0px 15px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/***************************************************
+NAVIGATION
+***************************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+
+
+/***************************************************
+FOOTER
+***************************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+}
+
 
 
 /***************************************************
@@ -43,16 +89,21 @@ COLORS
 
 /*site body = light olive*/
 body {
-  background-color: #E1F0B6;
+  background-color: #F5FFC0;
   color: #777;
 }
 
-/*slightly darker than body neutral header*/
+/*slightly darker than body, neutral header*/
 header {
   background: #CEF0BA;
   border-color: #E1F0B6;
 }
 
+/*slightly darker than body, neutral header*/
+footer {
+  background: #CEF0BA;
+  color: #888
+}
 
 /*ensure images have borders*/
 img {
