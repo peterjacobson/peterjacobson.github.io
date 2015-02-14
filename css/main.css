@@ -8,9 +8,9 @@ body{
 
 /*set page widths for screen sizes*/
 #wrapper {
-  max-width: 300px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0px 0px 200px 0px;
 }
 
 /*remove bullets from lists*/
@@ -36,7 +36,15 @@ HEADING
 
 /*remove body colored space above header (better way to do this?)*/
 header {
-  margin-top: -15px;
+  float: left;
+  margin-top: 0 0 0 15px;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -45,12 +53,11 @@ h1 {
   font-size: 3.5em;
   font-weight: normal;
   line-height: 0.8em;
-  padding: 15px 0px 15px;
 }
 
 h2 {
-  font-size: 2em;
-  margin: -5px 0 0;
+  font-size: 1.7em;
+  margin: 5px 0 15px;
   font-weight: normal;
 }
 
@@ -62,15 +69,40 @@ NAVIGATION
 
 nav {
   text-align: center;
-  padding: 10px 0;
+  padding: 1px 0;
 }
 
 nav ul {
-  padding-left: 0px;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
 }
 
+nav li {
+  display: inline-block;
+}
 
+nav a {
+  padding: 0px 10px;
+}
 
+/*Basic nav text style*/
+nav a {
+  color: #00A388;
+  text-shadow: 1px 1px #F5FFC0;
+}
+
+/*Colour standout for selected page*/
+nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
+  color: #FC6037;
+  text-shadow: 1px 1px #F5FFC0;
+}
+
+/*Colour standout + extra text shadow height for hover over nav link*/
+nav a:hover {
+  color: #FC6037;
+  text-shadow: 5px 5px #F5FFC0;
+}
 /***************************************************
 FOOTER
 ***************************************************/
@@ -78,7 +110,11 @@ FOOTER
 footer {
   font-size: 0.75em;
   text-align: center;
+  clear: both;
   padding: 5px 0px 5px;
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;*/
 }
 
 /***************************************************
@@ -99,6 +135,13 @@ PAGE: PORTFOLIO
   color: #888;
 }
 
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #888;
+}
+
 
 /***************************************************
 COLORS
@@ -116,8 +159,12 @@ body {
 
 /*slightly darker than body, neutral header*/
 header {
-  background: #CEF0BA;
+  background: #B5DEAC;
   border-color: #E1F0B6;
+}
+
+nav {
+  background-color: #CEF0BA;
 }
 
 /*slightly darker than body, neutral header*/
@@ -130,22 +177,4 @@ footer {
 h1, h2 {
   color: #00A388;
   text-shadow: 2px 2px #F5FFC0;
-}
-
-/*Basic nav text style*/
-nav a {
-  color: #00A388;
-  text-shadow: 1px 1px #F5FFC0;
-}
-
-/*Colour standout for selected page*/
-nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
-  color: #FC6037;
-  text-shadow: 1px 1px #F5FFC0;
-}
-
-/*Colour standout + extra text shadow height for hover over nav link*/
-nav a:hover {
-  color: #FC6037;
-  text-shadow: 5px 5px #F5FFC0;
 }
