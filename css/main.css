@@ -24,15 +24,19 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 
 /***************************************************
 HEADING
 ***************************************************/
 
-#logo {
-  text-align: center;
-  margin: 0;
+/*remove body colored space above header (better way to do this?)*/
+header {
+  margin-top: -15px;
 }
 
 h1 {
@@ -74,9 +78,18 @@ FOOTER
 footer {
   font-size: 0.75em;
   text-align: center;
-  padding-top: 50px;
+  padding: 5px 0px 5px;
 }
 
+/***************************************************
+PAGE: PORTFOLIO
+***************************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 
 /***************************************************
