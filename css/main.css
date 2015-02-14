@@ -132,17 +132,18 @@ PAGE: PORTFOLIO
 
 #gallery li {
   float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #222;
-  color: #888;
+  width: 42%;
+  margin: 4%;
+  background-color: #B5DEAC;
+  color: #003D33;
+  border-radius: 10%;
 }
 
 #gallery li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #888;
+  color: #003D33;
 }
 
 
@@ -155,7 +156,7 @@ PAGE: PORTFOLIO
   display: block;
   max-width: 250px;
   margin: 20px auto 30px;
-  border-radius: 100%;
+  border-radius: 20%;
 }
 
 
