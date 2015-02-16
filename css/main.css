@@ -108,14 +108,14 @@ nav a {
 
 /*Colour standout for selected page*/
 nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
-  color: #FC6037;
+  font-weight: 700;
   text-shadow: 1px 1px #F5FFC0;
 }
 
 /*Colour standout + extra text shadow height for hover over nav link*/
 nav a:hover {
   color: #FC6037;
-  text-shadow: 5px 5px #F5FFC0;
+  text-shadow: 2px 2px #F5FFC0;
 }
 /***************************************************
 FOOTER
