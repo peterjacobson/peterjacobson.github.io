@@ -8,9 +8,14 @@ body{
 
 /*set page widths for screen sizes*/
 #wrapper {
+  clear: both;
   max-width: 800px;
   margin: 0 auto;
   padding: 0px 0px 200px 0px;
+}
+
+#section {
+  margin-top: 40px;
 }
 
 /*remove bullets from lists*/
@@ -155,14 +160,47 @@ PAGE: PORTFOLIO
 
 
 /***************************************************
-PAGE: PORTFOLIO
+PAGE: ABOUT
 ***************************************************/
 
+/*!!!ISSUE profile photo has no nav margin*/
 .profile-photo {
+  clear: both;
   display: block;
-  max-width: 250px;
-  margin: 20px auto 30px;
-  border-radius: 20%;
+  max-width: 200px;
+  margin: 40px auto 30px;
+  border-radius: 3%;
+}
+
+
+
+/***************************************************
+PAGE: CONTACT
+***************************************************/
+
+.contact-info {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a{
+  background-image: url('../img/phone.png');
+}
+.contact-info li.mail a{
+  background-image: url('../img/mail.png');
+}
+.contact-info li.twitter a{
+  background-image: url('../img/twitter.png');
 }
 
 
