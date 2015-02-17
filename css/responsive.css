@@ -1,3 +1,11 @@
+@media screen and (min-width: 310px) {
+	nav li {
+	  display: inline-block;
+	}
+	
+}
+
+
 @media screen and (min-width: 480px) {
 
 	/***************************************************
@@ -13,6 +21,7 @@
     width: 50%;
     float: right;
   }
+
 
 
 
@@ -43,7 +52,7 @@
 
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 825px) {
 
 	/***************************************************
 	HEADER
@@ -54,6 +63,7 @@
 		float: right;
 		font-size: 1.125em;
 		margin-right: 5%;
+		margin-top: 75px;
 		text-align: right;
 		width: 45%;
 	}
