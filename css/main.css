@@ -45,7 +45,7 @@ HEADING
 /*remove body colored space above header (better way to do this?)*/
 header {
   float: left;
-  margin-top: 0 0 0 15px;
+  margin-top: 15px;
   padding: 5px 0 0 0;
   width: 100%;
 }
