@@ -92,12 +92,8 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  display: inline-block;
-}
-
 nav a {
-  padding: 0px 14px;
+  padding: 0px 10px;
 }
 
 /*Basic nav text style*/
