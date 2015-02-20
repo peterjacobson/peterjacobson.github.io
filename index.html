@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Peter Jacobson | Developer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='//fonts.googleapis.com/css?family=Glegoo:700|Oleo+Script|Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Roboto">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initiall-scale=1.0">
+
+    <!-- load head and header hmtl files with jquery -->
+    <script src="jquery.js"></script>
+    <script>
+      $(function(){
+        $("#includedHead").load("head.html");
+      });
+    </script>
+    <script>
+      $(funtion(){
+        $("#includedHeader").load("head.html");
+      });
+    </script>
+
+    <!-- insert head file -->
+    <div id="includedHead"></div>
+
   </head>
+
   <body class="home">
+
     <header>
-      <a href="index.html" id="logo">
-        <h1>Peter Jacobson</h1>
-        <h2>&#123;&nbsp;Developer&nbsp;&#125;</h2>
-      </a>
-      <nav>
-        <h3>
-          <ul>
-            <li>
-              <a href="index.html" class="home">Portfolio</a>
-            </li>
-            <li>
-              <a href="about.html" class="about">About</a>
-            </li>
-            <li>
-              <a href="contact.html" class="contact">Contact</a>
-            </li>
-          </ul>
-        </h3>
-      </nav>
+      <!-- include header file -->
+      <div id="includedHeader"></div>
     </header>
+
     <div id="wrapper">
       <section>
         <ul id="gallery">
