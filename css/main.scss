@@ -1,44 +1,54 @@
 /***************************************************
 GENERAL
 ***************************************************/
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+}
 
 /*set page widths for screen sizes*/
 #wrapper {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /*remove bullets from lists*/
 li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 /*remove link underline and blue color*/
 a {
   color: #777;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /***************************************************
 PAGE LAYOUT
 ***************************************************/
 .wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .main-header {
   margin: 0 auto;
   width: 100%;
-  top: 0; }
+  top: 0;
+}
 
 .content {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+}
 
 footer {
   margin: 0 auto;
@@ -46,23 +56,30 @@ footer {
   text-align: center;
   padding: 5px 0px 5px;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 /***************************************************
 HEADING
 ***************************************************/
+
 /*remove body colored space above header (better way to do this?)*/
 .title {
   margin-bottom: 8px;
   box-shadow: -4px -4px 10px 4px #006E26;
-  z-index: 20; }
+  z-index: 20;
+
+}
 
 .main-logo {
   display: inline-block;
   float: left;
-  margin: 0; }
-  .main-logo h2 {
-    display: none; }
+  margin: 0;
+
+  h2 {
+    display: none;
+  }
+}
 
 .foobar {
   display: inline-block;
@@ -78,83 +95,114 @@ HEADING
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  vertical-align: center; }
+  vertical-align: center;
+}
+
 
 h1 {
   font-family: 'Oleo Script', cursive;
   margin: 15px 2px 15px 15px;
   font-size: 2.5em;
   font-weight: normal;
-  line-height: 0.8em; }
+  line-height: 0.8em;
+}
 
 h2 {
   font-family: 'Oleo Script';
   font-size: 1.2em;
   margin: 5px 0;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 h3 {
   font-family: 'Signika';
   font-size: 1.2em;
   font-weight: normal;
-  margin: 0; }
+  margin: 0;
+}
 
 h4 {
   font-family: 'Signika';
   font-size: 1em;
   font-weight: normal;
-  margin: 0; }
+  margin: 0;
+}
+
+
 
 /***************************************************
 NAVIGATION
 ***************************************************/
+
 nav {
   text-align: center;
   padding: 1px 0;
   border-style: solid;
   border-width: 3px;
-  border-color: #B5DEAC; }
-  nav ul {
+  border-color: #B5DEAC;
+
+  ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
-  nav h3 {
+    padding: 0;
+  }
+
+  h3 {
     background-color: #CEF0BA;
     margin-bottom: 4px;
     border-style: none;
     border-radius: 3px;
-    box-shadow: 1px 1px #CEF0BA; }
-  nav h4 {
-    box-shadow: 0 2px #CEF0BA; }
-  nav a {
+    box-shadow: 1px 1px #CEF0BA;
+  }
+
+  h4 {
+    box-shadow: 0 2px #CEF0BA;
+  }
+
+  a {
     padding: 0px 14px;
     color: #006E26;
-    text-shadow: 1px 1px #F5FFC0; }
+    text-shadow: 1px 1px #F5FFC0;
+  }
 
+}
 /*Colour standout for selected page*/
-nav a:active, body.home a.home, body.about a.about, body.contact a.contact {
+nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
   font-weight: 700;
-  text-shadow: 1px 1px #F5FFC0; }
+  text-shadow: 1px 1px #F5FFC0;
+}
 
 /*Colour standout + extra text shadow height for hover over nav link*/
 nav a:hover {
   color: #FC6037;
-  text-shadow: 2px 2px #F5FFC0; }
+  text-shadow: 2px 2px #F5FFC0;
+}
 
 /***************************************************
 CONTENT SPACE
 ***************************************************/
+
+
+
+
 /***************************************************
 FOOTER
 ***************************************************/
+
+
+
 /***************************************************
 PAGE: PORTFOLIO
 ***************************************************/
+
+
+
 .gallery {
   margin: 0;
   padding: 0;
   list-style: none;
-  /*clear: both;*/ }
+  /*clear: both;*/
+}
 
 .gallery li {
   /*float: left;*/
@@ -162,32 +210,42 @@ PAGE: PORTFOLIO
   margin: 4%;
   background-color: #B5DEAC;
   color: #003D33;
-  border-radius: 10%; }
+  border-radius: 10%;
+}
 
 .gallery li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #003D33; }
+  color: #003D33;
+}
+
+
 
 /***************************************************
 PAGE: ABOUT
 ***************************************************/
+
 /*!!!ISSUE profile photo has no nav margin*/
 .profile-photo {
   clear: both;
   display: block;
   max-width: 200px;
   margin: 40px auto 30px;
-  border-radius: 3%; }
+  border-radius: 3%;
+}
+
+
 
 /***************************************************
 PAGE: CONTACT
 ***************************************************/
+
 .contact-info {
   padding: 0;
   margin: 0;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 .contact-info a {
   display: block;
@@ -195,56 +253,69 @@ PAGE: CONTACT
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding: 0 0 0 30px;
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+}
 
-.contact-info li.phone a {
-  background-image: url("../img/phone.png"); }
+.contact-info li.phone a{
+  background-image: url('../img/phone.png');
+}
+.contact-info li.mail a{
+  background-image: url('../img/mail.png');
+}
+.contact-info li.twitter a{
+  background-image: url('../img/twitter.png');
+}
 
-.contact-info li.mail a {
-  background-image: url("../img/mail.png"); }
 
-.contact-info li.twitter a {
-  background-image: url("../img/twitter.png"); }
 
 /***************************************************
 COLORS
 ***************************************************/
+
 /*use 'light touch' colourset*/
 /*colors based on https://color.adobe.com/Phaedra-color-theme-1764754/
 #FC6037 #F5FFC0 #E1F0B6 #CEF0BA #00A388*/
+
 /*site body = light olive*/
 body {
   background-color: #00190A;
-  color: #777; }
+  color: #777;
+}
 
 /*slightly darker than body, neutral header*/
 header {
   background: #B5DEAC;
-  border-color: #E1F0B6; }
+  border-color: #E1F0B6;
+}
 
 /*slightly darker than body, neutral header*/
 footer {
   background: #B5DEAC;
-  color: #888; }
+  color: #888
+}
 
 /*Slight colour emphasis on headings and shadow to give page texture*/
 h1 {
   color: #006E26;
-  text-shadow: 2px 2px #F5FFC0; }
+  text-shadow: 2px 2px #F5FFC0;
+}
 
 header h2 {
   color: #006E26;
-  text-shadow: 1px 1px #F5FFC0; }
+  text-shadow: 1px 1px #F5FFC0;
+}
+
 
 /***************************************************
 Clearfix nicolas gallagher
 ***************************************************/
+
 .group:before,
 .group:after {
-  content: " ";
-  display: table; }
+    content: " ";
+    display: table;
+}
 
 .group:after {
-  clear: both; }
-
-/*# sourceMappingURL=main.css.map */
+    clear: both;
+}

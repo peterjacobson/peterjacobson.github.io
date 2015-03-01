@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-
-    <!-- load head and header hmtl files with jquery -->
-    <script src="jquery.js"></script>
-    <script>
-      $(function(){
-        $("#includedHead").load("head.html");
-      });
-    </script>
-    <script>
-      $(funtion(){
-        $("#includedHeader").load("head.html");
-      });
-    </script>
-
-    <!-- insert head file -->
-    <div id="includedHead"></div>
-
+    <meta charset="utf-8">
+    <title>Peter Jacobson</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Signika:400,600|Glegoo:700|Oleo+Script|Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-  <body class="home">
 
-    <header>
-      <!-- include header file -->
-      <div id="includedHeader"></div>
-    </header>
+  <body>
+    <div class="wrapper">
 
-    <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <!-- 1024x768 size images best -->
-          <li>
-            <a href="img/uke-conservatory.jpg">
-              <img src="img/uke-conservatory.jpg" alt"ukein' in conservatory">
-              <p>
-                hi
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="img/uke-conservatory.jpg">
-              <img src="img/uke-conservatory.jpg" alt"ukein' in conservatory">
-              <p>
-                what's up?
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="img/sunny-bike-fixer.jpg">
-              <img src="img/sunny-bike-fixer.jpg" alt"sunny bike fixer">
-              <p>
-                we're captions!
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="img/sunny-bike-fixer.jpg">
-              <img src="img/sunny-bike-fixer.jpg" alt"sunny bike fixer">
-              <p>
-                we're captions
-              </p>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <header class="main-header">
+
+        <div class="title group">
+          <a href="index.html" class="main-logo">
+            <h1>Peter Jacobson</h1>
+            <h2>&#123;&nbsp;Developer&nbsp;&#125;</h2>
+          </a>
+
+          <button class="foobar"></button>
+        </div>
+
+        <nav>
+          <ul class="main-nav">
+            <li>
+              <h3><a href="index.html" class="home">Portfolio<i class="chevron bottom"></i></a></h3>
+              <ul class="sub-main-nav">
+                <li><h4><a href="#" class="PortfolioOverview">Overview</a></h4></li>
+                <li><h4><a href="#" class="proj1">Project 1</a></h4></li>
+                <li><h4><a href="#" class="proj2">Project 2</a></h4></li>
+                <li><h4><a href="#" class="proj3">Project 3</a></h4></li>
+              </ul>
+            </li>
+            <li><h3><a href="about.html">About</a></h3></li>
+            <li><h3><a href="contact.html">Contact</a></h3></li>
+          </ul>
+        </nav>
+
+      </header>
+
+
+      <div class="content">
+          <ul class="gallery group">
+            <!-- 1024x768 size images best -->
+            <li>
+              <a href="#">
+                <img src="img/uke-conservatory.jpg" alt"ukein' in conservatory">
+                <p>hi</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/uke-conservatory.jpg" alt"ukein' in conservatory">
+                <p>what's up?</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/sunny-bike-fixer.jpg" alt"sunny bike fixer">
+                <p>we're captions!</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/sunny-bike-fixer.jpg" alt"sunny bike fixer">
+                <p>we're captions</p>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+
+      <footer>
+        <!-- <a href="www.profile.com"> <img src="img/twitter-wrap" alt="Twitter logo"></a> -->
+        <p>&copy; 2015 Peter Jacobson</p>
+      </footer>
+
     </div>
-    <footer>
-      <!-- <a href="www.profile.com"> <img src="img/twitter-wrap" alt="Twitter logo"></a> -->
-      <p>&copy; 2015 Peter Jacobson</p>
-    </footer>
   </body>
 </html>
