@@ -40,12 +40,14 @@ PAGE LAYOUT
 }
 
 .main-header {
+  position: relative;
   margin: 0 auto;
   width: 100%;
   top: 0;
 }
 
 .content {
+  position: relative;
   margin: 0 auto;
   width: 100%;
 }
@@ -67,7 +69,9 @@ HEADING
 .title {
   margin-bottom: 8px;
   box-shadow: -4px -4px 10px 4px #006E26;
+  position: relative;
   z-index: 20;
+  background-color: #B5DEAC;
 
 }
 
@@ -116,14 +120,14 @@ h2 {
 
 h3 {
   font-family: 'Signika';
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: normal;
   margin: 0;
 }
 
 h4 {
   font-family: 'Signika';
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: normal;
   margin: 0;
 }
@@ -135,6 +139,9 @@ NAVIGATION
 ***************************************************/
 
 nav {
+  position: relative;
+  z-index: 5;
+  margin-top: -228px;
   text-align: center;
   padding: 1px 0;
   border-style: solid;
@@ -149,14 +156,11 @@ nav {
 
   h3 {
     background-color: #CEF0BA;
+    padding: 4px;
     margin-bottom: 4px;
     border-style: none;
     border-radius: 3px;
-    box-shadow: 1px 1px #CEF0BA;
-  }
-
-  h4 {
-    box-shadow: 0 2px #CEF0BA;
+    box-shadow: 0 8px 10px -10px #003D33;
   }
 
   a {
@@ -166,6 +170,22 @@ nav {
   }
 
 }
+.sub-main-nav{
+  height: 0;
+  overflow: hidden;
+
+}
+
+.sub-main-nav li{
+  padding: 3px;
+  box-shadow: 3px 6px 10px -10px #003D33;
+
+}
+
+.sub-main-nav:last-child {
+  box-shadow: none;
+}
+
 /*Colour standout for selected page*/
 nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
   font-weight: 700;
@@ -291,7 +311,7 @@ header {
 /*slightly darker than body, neutral header*/
 footer {
   background: #B5DEAC;
-  color: #888
+  color: #006E26
 }
 
 /*Slight colour emphasis on headings and shadow to give page texture*/
