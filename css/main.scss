@@ -1,57 +1,68 @@
-/***************************************************
-GENERAL
-***************************************************/
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+RESETS & FIXES
+*******************************************************************************
+*******************************************************************************
+***
+*/
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-/*set page widths for screen sizes*/
+// set visible content wrapper widths for screen sizes
 #wrapper {
-  width: 100%;
+  width: 100%; //expand to screen width
   margin: 0 auto;
 }
 
-/*remove bullets from lists*/
 li {
-  list-style-type: none;
+  list-style-type: none; // remove bullets from lists
 }
 
-/*remove link underline and blue color*/
 a {
-  color: #777;
-  text-decoration: none;
+  text-decoration: none; // remove link underline
 }
 
-img {
-  max-width: 100%;
-}
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+LAYOUT
+*******************************************************************************
+*******************************************************************************
+*
+*/
 
-/***************************************************
-PAGE LAYOUT
-***************************************************/
+// Entire visible page wrapped in here
 .wrapper {
+  //expand to viewport
   width: 100%;
   height: 100%;
 }
 
+// Contains header and navigation, TopBar if you will
 .main-header {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  top: 0;
+  top: 0; // position at top of page
 }
 
+// Contains content
 .content {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
 
+// Footer. Se obvio.
 footer {
   margin: 0 auto;
   font-size: 0.75em;
@@ -61,6 +72,7 @@ footer {
   width: 100%;
 }
 
+
 /***************************************************
 HEADING
 ***************************************************/
@@ -68,11 +80,8 @@ HEADING
 /*remove body colored space above header (better way to do this?)*/
 .title {
   margin-bottom: 8px;
-  box-shadow: -4px -4px 10px 4px #006E26;
   position: relative;
   z-index: 20;
-  background-color: #B5DEAC;
-
 }
 
 .main-logo {
@@ -92,6 +101,120 @@ HEADING
   height: 28px;
   width: 32px;
   padding: 10px;
+}
+
+
+
+/***************************************************
+NAVIGATION
+***************************************************/
+
+nav {
+  position: relative;
+  z-index: 5;
+  height: 0;
+  text-align: center;
+  overflow: hidden;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    padding: 4px;
+    margin-bottom: 4px;
+  }
+
+  a {
+    padding: 0px 14px;
+  }
+
+}
+
+.sub-main-nav{
+  height: 0;
+  overflow: hidden;
+}
+
+.sub-main-nav li{
+  padding: 3px;
+}
+
+
+
+/***************************************************
+CONTENT SPACE
+***************************************************/
+
+
+
+/***************************************************
+FOOTER
+***************************************************/
+
+
+
+
+
+
+
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+ELEMENTS COLORS & STYLING
+*******************************************************************************
+*******************************************************************************
+*
+*/
+
+/*use 'light touch' colourset*/
+/*colors based on https://color.adobe.com/Phaedra-color-theme-1764754/
+#FC6037 #F5FFC0 #E1F0B6 #CEF0BA #00A388*/
+
+
+
+/*site body = light oliv*/
+body {
+  background-color: #00190A;
+  color: #777;
+}
+/*slightly darker than body, neutral header*/
+header {
+  background: #B5DEAC;
+  border-color: #E1F0B6;
+}
+.main-header {
+  background-color: #CEF0BA;
+}
+/*slightly darker than body, neutral header*/
+footer {
+  background: #B5DEAC;
+  color: #006E26
+}
+/*Slight colour emphasis on headings and shadow to give page texture*/
+h1 {
+  color: #006E26;
+  text-shadow: 2px 2px #F5FFC0;
+}
+header h2 {
+  color: #006E26;
+  text-shadow: 1px 1px #F5FFC0;
+}
+/*remove link blu color*/
+a {
+  color: #777;
+}
+.title {
+  border-style: solid;
+  border-color: #006E26;
+  border-width: 0 0 2px;
+  background-color: #B5DEAC;
+}
+.foobar {
   border-style: none;
   border-radius: 2px;
   background-color: #CEF0BA;
@@ -101,7 +224,49 @@ HEADING
   background-position: center;
   vertical-align: center;
 }
+.sub-main-nav li{
+  border-style: solid;
+  border-color: #006E26;
+  border-width: 0 0 2px;
+}
+.sub-main-nav:last-child {
+  border-style: none;
+}
+nav {
+  h3 {
+    background-color: #B5DEAC;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #006E26;
+    border-width: 0 0 3px;
+  }
+  a {
+    color: #006E26;
+    text-shadow: 1px 1px #F5FFC0;
+  }
+}
+/*Colour standout for selected page*/
+nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
+  font-weight: 700;
+  text-shadow: 1px 1px #F5FFC0;
+}
+/*Colour standout + extra text shadow height for hover over nav link*/
+nav a:hover {
+  color: #FC6037;
+  text-shadow: 2px 2px #F5FFC0;
+}
 
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+TYPOGRAPHY
+*******************************************************************************
+*******************************************************************************
+*
+*/
 
 h1 {
   font-family: 'Oleo Script', cursive;
@@ -132,203 +297,27 @@ h4 {
   margin: 0;
 }
 
-
-
-/***************************************************
-NAVIGATION
-***************************************************/
-
-nav {
-  position: relative;
-  z-index: 5;
-  margin-top: -228px;
-  text-align: center;
-  padding: 1px 0;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #B5DEAC;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  h3 {
-    background-color: #CEF0BA;
-    padding: 4px;
-    margin-bottom: 4px;
-    border-style: none;
-    border-radius: 3px;
-    box-shadow: 0 8px 10px -10px #003D33;
-  }
-
-  a {
-    padding: 0px 14px;
-    color: #006E26;
-    text-shadow: 1px 1px #F5FFC0;
-  }
-
-}
-.sub-main-nav{
-  height: 0;
-  overflow: hidden;
-
-}
-
-.sub-main-nav li{
-  padding: 3px;
-  box-shadow: 3px 6px 10px -10px #003D33;
-
-}
-
-.sub-main-nav:last-child {
-  box-shadow: none;
-}
-
-/*Colour standout for selected page*/
-nav a:active, body.home a.home, body.about a.about, body.contact a.contact{
-  font-weight: 700;
-  text-shadow: 1px 1px #F5FFC0;
-}
-
-/*Colour standout + extra text shadow height for hover over nav link*/
-nav a:hover {
-  color: #FC6037;
-  text-shadow: 2px 2px #F5FFC0;
-}
-
-/***************************************************
-CONTENT SPACE
-***************************************************/
-
-
-
-
-/***************************************************
-FOOTER
-***************************************************/
-
-
-
-/***************************************************
-PAGE: PORTFOLIO
-***************************************************/
-
-
-
-.gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  /*clear: both;*/
-}
-
-.gallery li {
-  /*float: left;*/
-  width: 90%;
-  margin: 4%;
-  background-color: #B5DEAC;
-  color: #003D33;
-  border-radius: 10%;
-}
-
-.gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #003D33;
-}
-
-
-
-/***************************************************
-PAGE: ABOUT
-***************************************************/
-
-/*!!!ISSUE profile photo has no nav margin*/
-.profile-photo {
-  clear: both;
-  display: block;
-  max-width: 200px;
-  margin: 40px auto 30px;
-  border-radius: 3%;
-}
-
-
-
-/***************************************************
-PAGE: CONTACT
-***************************************************/
-
-.contact-info {
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.phone a{
-  background-image: url('../img/phone.png');
-}
-.contact-info li.mail a{
-  background-image: url('../img/mail.png');
-}
-.contact-info li.twitter a{
-  background-image: url('../img/twitter.png');
-}
-
-
-
-/***************************************************
-COLORS
-***************************************************/
-
-/*use 'light touch' colourset*/
-/*colors based on https://color.adobe.com/Phaedra-color-theme-1764754/
-#FC6037 #F5FFC0 #E1F0B6 #CEF0BA #00A388*/
-
-/*site body = light olive*/
 body {
-  background-color: #00190A;
-  color: #777;
-}
-
-/*slightly darker than body, neutral header*/
-header {
-  background: #B5DEAC;
-  border-color: #E1F0B6;
-}
-
-/*slightly darker than body, neutral header*/
-footer {
-  background: #B5DEAC;
-  color: #006E26
-}
-
-/*Slight colour emphasis on headings and shadow to give page texture*/
-h1 {
-  color: #006E26;
-  text-shadow: 2px 2px #F5FFC0;
-}
-
-header h2 {
-  color: #006E26;
-  text-shadow: 1px 1px #F5FFC0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
-/***************************************************
-Clearfix nicolas gallagher
-***************************************************/
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+MISCELANEOUS
+*******************************************************************************
+*******************************************************************************
+*
+*/
+/*
+****************************************************
+CLEARFIX nicolas gallagher
+****************************************************
+*/
 
 .group:before,
 .group:after {
@@ -339,3 +328,90 @@ Clearfix nicolas gallagher
 .group:after {
     clear: both;
 }
+
+/*
+*
+**
+*****
+**************
+*******************************************************************************
+RECYCLE BIN
+*******************************************************************************
+*******************************************************************************
+*
+*/
+
+// /***************************************************
+// PAGE: PORTFOLIO
+// ***************************************************/
+//
+//
+//
+// .gallery {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   /*clear: both;*/
+// }
+//
+// .gallery li {
+//   /*float: left;*/
+//   width: 90%;
+//   margin: 4%;
+//   background-color: #B5DEAC;
+//   color: #003D33;
+//   border-radius: 10%;
+// }
+//
+// .gallery li a p {
+//   margin: 0;
+//   padding: 5%;
+//   font-size: 0.75em;
+//   color: #003D33;
+// }
+//
+//
+//
+// /***************************************************
+// PAGE: ABOUT
+// ***************************************************/
+//
+// /*!!!ISSUE profile photo has no nav margin*/
+// .profile-photo {
+//   clear: both;
+//   display: block;
+//   max-width: 200px;
+//   margin: 40px auto 30px;
+//   border-radius: 3%;
+// }
+//
+//
+//
+// /***************************************************
+// PAGE: CONTACT
+// ***************************************************/
+//
+// .contact-info {
+//   padding: 0;
+//   margin: 0;
+//   font-size: 0.9em;
+// }
+//
+// .contact-info a {
+//   display: block;
+//   min-height: 20px;
+//   background-repeat: no-repeat;
+//   background-size: 20px 20px;
+//   padding: 0 0 0 30px;
+//   margin: 0 0 10px;
+// }
+//
+// .contact-info li.phone a{
+//   background-image: url('../img/phone.png');
+// }
+// .contact-info li.mail a{
+//   background-image: url('../img/mail.png');
+// }
+// .contact-info li.twitter a{
+//   background-image: url('../img/twitter.png');
+// }

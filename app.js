@@ -7,27 +7,27 @@ var $navButton = $('.foobar');
 
 $navButton.click(function() {
 
-  var $mainMenu = $('header nav');
-  var marginTop;
-  var initialMargin = $mainMenu.css("margin-top");
+  console.log("nav but clicked");
+  var $mainMenu = $('nav');
+  console.log($mainMenu);
 
-  if ($mainMenu.css("margin-top") == initialMargin) {
+  if ($mainMenu.css("height") != "0") {
     console.log('show nav');
-    marginTop = "0px";
+    height = "0";
   } else {
     console.log('hide nav');
-    marginTop = initialMargin;
+    height = "initial";
   };
 
-  console.log("nav but clicked");
-  $mainMenu.animate({
-    "margin-top": marginTop
-  }, {
-    duration: 400,
-    specialEasing: {
-      "margin-top": "easeOutCubic"
-    }
-  });
+  $mainMenu.css('height', height);
+  // $mainMenu.animate({
+  //   "height": height
+  // }, {
+  //   duration: 400,
+  //   specialEasing: {
+  //     "height": "easeOutCubic"
+  //   }
+  // });
 });
 
 // On click to header or away from nav, hide nav
