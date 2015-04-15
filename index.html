@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/maincss.css">
 
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,17 +43,33 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
+  <header class="container">
+    <div id="peteFace" class="rotate180"></div>
+    <!-- <img src="img/meetPete.png" alt="Pete's head upside down appearing from the top of the page" class="rotate180" id="peteFace"/> -->
+    <!-- <img src="img/meetPeteShadow.png" class="rotate180" id="peteFaceShadow"/> -->
+  </header>
+  <div class="message pete short">
+    <p>Oh, hey!</p>
   </div>
+  <div class="message pete">
+    <p>I'm Pete... Thanks for dropping by!</p>
+    <p>What can I do for you?</p>
+  </div>
+  <div class="message user">
+    <p>Hi Pete! So...</p>
+    <button class="option user">
+      <p>What have you been working on?</p>
+    </button>
+    <button class="option user">
+      <p>What are you up to now?</p>
+    </button>
+    <button class="option user">
+      <p>Tell me about yourself!</p>
+    </button>
+  </div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
