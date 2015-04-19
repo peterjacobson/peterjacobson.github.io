@@ -1,0 +1,100 @@
+/************Reset**************/
+/* line 3, ../sass/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/main.scss */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 11, ../sass/main.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 14, ../sass/main.scss */
+header, footer, nav, section, article, hgroup, figure {
+  display: block;
+}
+
+/* line 17, ../sass/main.scss */
+legend {
+  display: none;
+}
+
+/* line 20, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+/************End Reset**************/
+/************Global**************/
+/* line 27, ../sass/main.scss */
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/************End Global**************/
+/************Structure**************/
+/* line 38, ../sass/main.scss */
+body {
+  min-height: 100%;
+  background: #111;
+}
+
+/* line 43, ../sass/main.scss */
+header {
+  z-index: 30;
+  margin: -70% 0 0;
+}
+
+/* line 48, ../sass/main.scss */
+#peteFace {
+  min-height: 22em;
+  background: url(../img/meetPete.png), url(../img/meetPeteDarkShadow1.png);
+  background-repeat: no-repeat;
+  background-size: 90%, 100%;
+  background-position: 50% 50%, 50% 46%;
+  z-index: 20;
+}
+
+/* line 58, ../sass/main.scss */
+.message {
+  margin: 1em 0.3em;
+  padding: 0.5em;
+  width: 92%;
+  border-radius: 0.3em;
+  box-shadow: 0.2em 0.2em #333;
+  color: #222;
+}
+
+/* line 66, ../sass/main.scss */
+.pete {
+  margin-left: -100%;
+  background: #ddd;
+}
+
+/* line 71, ../sass/main.scss */
+.user {
+  margin-left: 120%;
+  /*1.4em*/
+  background: #eee;
+  text-align: center;
+}
+
+/* line 77, ../sass/main.scss */
+.short {
+  margin-top: 0;
+  width: 25%;
+}
+
+/************End Structure**************/
