@@ -128,4 +128,9 @@ body {
   box-shadow: 0em 0.1em #fe956a;
 }
 
+/* line 106, ../sass/main.scss */
+#hi-name {
+  height: 0;
+}
+
 /************End Structure**************/

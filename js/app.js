@@ -27,7 +27,7 @@ $(function() {
 
     $('html, body').delay(2000).animate({scrollTop: $('#menu').offset()},1400);
 
-    // first user message slides up from bottom
+    // first user message slides in from right
     $('#menu').delay(2900).animate({'margin-left': '1.4em'}, 800);
 
     // focus on user name textbox
@@ -48,7 +48,12 @@ $(function() {
   $('#user-name-input').keypress(function (e) {
     var key = e.which;
     if(key == 13) { // enter key code
-      $('#menu')
+      $('#hi-name').css('height', 'initial').animate({'margin-left': '0.3em'}, 400);
+
+      $('#menu-items').appendTo('#detached-menu');
+      $('#detached-menu').delay(400).animate({'margin-left': '1.4em'}, 800);
+    }
+  });
   // on click of user message option button
 
     // ----- scroll down page
