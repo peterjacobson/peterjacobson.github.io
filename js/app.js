@@ -4,7 +4,9 @@
 
 // on window load, animate face slide down to forehead height
 $(window).load(function() {
-  // $('#peteFace').animate({margin-top: -100%}, 1000)
+  $('html, body').animate({
+        scrollTop: $("#page-top").offset().top
+    }, 0);
   $('header').animate({'margin-top': '-50%'}, 1200);
 });
 
@@ -30,8 +32,7 @@ $(function() {
     $( this ).click(function() {
       // random sample from expressions
       console.log('ow!')
-      $('header').animate({'margin-left': '-0.1em'}, 100);
-      $('header').animate({'margin-left': '0.1em'}, 100);
+      $('header').animate({'margin-left': '0.4em'}, 100);
       $('header').animate({'margin-left': '0em'}, 100);
     });
   });

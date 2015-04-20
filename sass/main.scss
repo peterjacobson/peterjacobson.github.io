@@ -36,6 +36,10 @@ html, body {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.hidden {
+ 	display: none;
+}
 /************End Global**************/
 
 
@@ -46,7 +50,6 @@ body {
 }
 
 header {
-	z-index: 30;
 	margin: -70% 0 0;
 }
 
