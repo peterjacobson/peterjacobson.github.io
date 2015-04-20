@@ -8,8 +8,6 @@ function slideInMessage(messageID, delayT, speed) {
   } else if (message.hasClass('pete')) {
     var Lmargin = '0.3em';
   }
-  console.log(message)
-  console.log(Lmargin)
   message.show()//css('display', 'block');
   message.delay(delayT).animate({'margin-left': Lmargin}, speed);
 }
@@ -62,8 +60,10 @@ $(function() {
   $('#user-name-input').keypress(function (e) {
     var key = e.which;
     if(key == 13) { // enter key code
+      var username = $('#user-name-input').val();
+      userMessage = 'Ah, '+username+'! Sorry, you were saying?';
+      $('#hi-name p').html(userMessage);
       slideInMessage('#hi-name', 0, 400);
-
       $('#menu-items').appendTo('#detached-menu');
       $('#user-name-input').css('margin-bottom', 0);
       slideInMessage('#detached-menu', 400);
