@@ -1,7 +1,7 @@
 // MVP ===============================================================
 function slideInMessage(messageID, delayT, speed) {
   delayT = typeof delayT !== 'undefined' ? delayT : 0;
-  speed = typeof speed !== 'undefined' ? speed : 400;
+  speed = typeof speed !== 'undefined' ? speed : 600;
   var message = $(messageID)
   if (message.hasClass('user')) {
     var Lmargin = '1.4em';
@@ -39,11 +39,11 @@ $(function() {
 
     $('html, body').delay(2000).animate({scrollTop: $('#menu').offset()},1400);
 
-    // first user message slides in from right
-    slideInMessage('#menu', 2900);
     // inflate page-bottom div to lift the input field above the keypad
-    $('#page-bottom').delay(2900).css('display', 'block').css('height', '10em');
+    $('#page-bottom').delay(2000).css('display', 'block').css('height', '10em');
     $('html, body').delay(0).animate({scrollTop: $(document).height()},1400);
+    // first user message slides in from right
+    slideInMessage('#menu', 2400);
     // focus on user name textbox
     setTimeout(function() {
       $('#user-name-input').focus();
@@ -66,6 +66,7 @@ $(function() {
       userMessage = 'Ah, '+username+'! Sorry, you were saying?';
       $('#hi-name p').html(userMessage);
       slideInMessage('#hi-name', 0, 400);
+      $('#hi-name').focus();
       $('#menu-items').appendTo('#detached-menu');
       $('#user-name-input').css('margin-bottom', 0);
       slideInMessage('#detached-menu', 400);
