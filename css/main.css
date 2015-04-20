@@ -86,14 +86,14 @@ body {
 /* line 75, ../sass/main.scss */
 .pete {
   margin-left: -100%;
-  background: #ddd;
+  background: #DDDAA6;
 }
 
 /* line 80, ../sass/main.scss */
 .user {
   margin-left: 120%;
   /*1.4em*/
-  background: #eee;
+  background: #FFE2AC;
 }
 
 /* line 84, ../sass/main.scss */
@@ -101,7 +101,7 @@ body {
   display: inline;
   width: 65%;
   border: none;
-  box-shadow: 0em 0.1em #fe956a;
+  box-shadow: -0.1em 0 #fe956a;
 }
 
 /* line 90, ../sass/main.scss */
