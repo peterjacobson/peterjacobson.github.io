@@ -4,6 +4,7 @@
 
 // on window load, animate face slide down to forehead height
 $(window).load(function() {
+  $('header').css('margin-top', '-100%');
   $('html, body').animate({
         scrollTop: $("#page-top").offset().top
     }, 0);
@@ -13,20 +14,21 @@ $(window).load(function() {
 // DOCUMENT READY EVENTS
 $(function() {
   // on forehead click,
-  $('header').one("click", function() {
+  $('#peteFace').one("click", function() {
 
     // face slides all the way down
     $('header').animate({'margin-top': '0'}, 250);
 
-    // first pete message slides in from left
-    $('#hi').delay(300).animate({'margin-left': '0.3em'}, 800);
+    // first pete message slides in from left behind the head, then down to it's final position
+    $('#hi').delay(0).animate({'margin-left': '0.3em'}, 0);
+    $('#hi').delay(300).animate({'margin-top': '0'}, 800);
     // second pete message slides in from left
     $('#welcome').delay(1400).animate({'margin-left': '0.3em'}, 800);
 
-    $('html, body').delay(2000).animate({scrollTop: $(document).height()-$(window).height()},1400);
+    $('html, body').delay(2000).animate({scrollTop: $('#menu').offset()},1400);
 
     // first user message slides up from bottom
-    $('#menu').delay(2500).animate({'margin-left': '1.4em'}, 800);
+    $('#menu').delay(2900).animate({'margin-left': '1.4em'}, 800);
 
     // head clicked again
     $( this ).click(function() {

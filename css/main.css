@@ -56,26 +56,21 @@ html, body {
 
 /************End Global**************/
 /************Structure**************/
-/* line 47, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 body {
   min-height: 100%;
   background: #111;
 }
 
-/* line 52, ../sass/main.scss */
-header {
-  z-index: 30;
-  margin: -70% 0 0;
-}
-
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #peteFace {
-  min-height: 19em;
+  min-height: 17em;
   background: url(../img/meetPete.png), url(../img/meetPeteDarkShadow1.png);
   background-repeat: no-repeat;
   background-size: 19em, 19em;
-  background-position: 9em 0, 8em 0;
+  background-position: -3em -1.5em, -3.3em -1.5em;
   z-index: 20;
+  width: 10em;
 }
 
 /* line 67, ../sass/main.scss */
@@ -99,13 +94,26 @@ header {
   margin-left: 120%;
   /*1.4em*/
   background: #eee;
-  text-align: center;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
+.user input {
+  display: inline;
+  width: 65%;
+  border: none;
+  box-shadow: 0em 0.1em #fe956a;
+}
+
+/* line 90, ../sass/main.scss */
 .short {
-  margin-top: 0;
+  margin-top: -10em;
   width: 25%;
+}
+
+/* line 94, ../sass/main.scss */
+.option {
+  border: none;
+  box-shadow: 0em 0.1em #fe956a;
 }
 
 /************End Structure**************/

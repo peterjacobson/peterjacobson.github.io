@@ -40,6 +40,10 @@ html, body {
 .hidden {
  	display: none;
 }
+
+button {
+
+}
 /************End Global**************/
 
 
@@ -50,19 +54,16 @@ body {
 }
 
 header {
-	margin: -70% 0 0;
 }
-
 	#peteFace {
-		min-height: 19em;
+		min-height: 17em;
 		background: url(../img/meetPete.png), url(../img/meetPeteDarkShadow1.png);
 		background-repeat: no-repeat;
 		background-size: 19em, 19em;
-		background-position: 9em 0, 8em 0;
+		background-position: -3em -1.5em, -3.3em -1.5em;
 		z-index: 20;
+		width: 10em;
 	}
-
-
 	.message {
 		margin: 1em 0.3em;
 		padding: 0.5em;
@@ -79,12 +80,20 @@ header {
 		.user {
 			margin-left: 120%; /*1.4em*/
 			background: #eee;
-			text-align: center;
 		}
-
+			.user input {
+				display: inline;
+				width: 65%;
+				border: none;
+				box-shadow: 0em 0.1em #fe956a;
+			}
 		.short {
-			margin-top: 0;
+			margin-top: -10em;
 			width: 25%;
+		}
+		.option {
+			border: none;
+			box-shadow: 0em 0.1em #fe956a;
 		}
 
 
