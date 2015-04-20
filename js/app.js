@@ -1,7 +1,7 @@
 // MVP ===============================================================
 function slideInMessage(messageID, delayT, speed) {
   delayT = typeof delayT !== 'undefined' ? delayT : 0;
-  speed = typeof speed !== 'undefined' ? speed : 800;
+  speed = typeof speed !== 'undefined' ? speed : 400;
   var message = $(messageID)
   if (message.hasClass('user')) {
     var Lmargin = '1.4em';
@@ -15,12 +15,12 @@ function slideInMessage(messageID, delayT, speed) {
 
 // on window load, animate face slide down to forehead height
 $(window).load(function() {
+  $('.message').hide();
   $('header').css('margin-top', '-100%');
   $('html, body').animate({
         scrollTop: $("#page-top").offset().top
     }, 0);
   $('header').animate({'margin-top': '-50%'}, 1200);
-  $('.message').hide();
 });
 
 // DOCUMENT READY EVENTS
@@ -41,7 +41,9 @@ $(function() {
 
     // first user message slides in from right
     slideInMessage('#menu', 2900);
-
+    // inflate page-bottom div to lift the input field above the keypad
+    $('#page-bottom').delay(2900).css('display', 'block').css('height', '10em');
+    $('html, body').delay(0).animate({scrollTop: $(document).height()},1400);
     // focus on user name textbox
     setTimeout(function() {
       $('#user-name-input').focus();
