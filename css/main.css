@@ -106,9 +106,10 @@ body {
   width: 65%;
   border: none;
   box-shadow: -0.1em 0 #fe956a;
+  margin-bottom: 0.5em;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .user input[type="submit"] {
   position: absolute;
   left: -9999px;
@@ -116,13 +117,13 @@ body {
   height: 1px;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .short {
   margin-top: -10em;
   width: 25%;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .option {
   border: none;
   box-shadow: 0em 0.1em #fe956a;
