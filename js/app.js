@@ -1,5 +1,18 @@
 // MVP ===============================================================
-
+function slideInMessage(messageID, delayT, speed) {
+  delayT = typeof delayT !== 'undefined' ? delayT : 0;
+  speed = typeof speed !== 'undefined' ? speed : 800;
+  var message = $(messageID)
+  if (message.hasClass('user')) {
+    var Lmargin = '1.4em';
+  } else if (message.hasClass('pete')) {
+    var Lmargin = '0.3em';
+  }
+  console.log(message)
+  console.log(Lmargin)
+  message.show()//css('display', 'block');
+  message.delay(delayT).animate({'margin-left': Lmargin}, speed);
+}
 // ANIMATIONS -------------------------------------------------------------
 
 // on window load, animate face slide down to forehead height
@@ -9,6 +22,7 @@ $(window).load(function() {
         scrollTop: $("#page-top").offset().top
     }, 0);
   $('header').animate({'margin-top': '-50%'}, 1200);
+  $('.message').hide();
 });
 
 // DOCUMENT READY EVENTS
@@ -20,15 +34,15 @@ $(function() {
     $('header').animate({'margin-top': '0'}, 250);
 
     // first pete message slides in from left behind the head, then down to it's final position
-    $('#hi').delay(0).animate({'margin-left': '0.3em'}, 0);
+    slideInMessage('#hi',0,0);
     $('#hi').delay(300).animate({'margin-top': '0'}, 800);
     // second pete message slides in from left
-    $('#welcome').delay(1400).animate({'margin-left': '0.3em'}, 800);
+    slideInMessage('#welcome', 1400)
 
     $('html, body').delay(2000).animate({scrollTop: $('#menu').offset()},1400);
 
     // first user message slides in from right
-    $('#menu').delay(2900).animate({'margin-left': '1.4em'}, 800);
+    slideInMessage('#menu', 2900);
 
     // focus on user name textbox
     setTimeout(function() {
@@ -48,10 +62,10 @@ $(function() {
   $('#user-name-input').keypress(function (e) {
     var key = e.which;
     if(key == 13) { // enter key code
-      $('#hi-name').css('height', 'initial').animate({'margin-left': '0.3em'}, 400);
+      slideInMessage('#hi-name', 0, 400);
 
       $('#menu-items').appendTo('#detached-menu');
-      $('#detached-menu').delay(400).animate({'margin-left': '1.4em'}, 800);
+      slideInMessage('#detached-menu', 400);
     }
   });
   // on click of user message option button
