@@ -17,21 +17,21 @@ $(function() {
     $('header').animate({'margin-top': '0'}, 250);
 
     // first pete message slides in from left
-    $('.message.pete.first').delay(300).animate({'margin-left': '0.3em'}, 800);
+    $('#hi').delay(300).animate({'margin-left': '0.3em'}, 800);
     // second pete message slides in from left
-    $('.message.pete.second').delay(1400).animate({'margin-left': '0.3em'}, 800);
+    $('#welcome').delay(1400).animate({'margin-left': '0.3em'}, 800);
 
-    $('html, body').delay(2000).animate({scrollTop: $(document).height()-$(window).height()*0.98},1400);
+    $('html, body').delay(2000).animate({scrollTop: $(document).height()-$(window).height()},1400);
 
     // first user message slides up from bottom
-    $('.message.user.first').delay(2500).animate({'margin-left': '1.4em'}, 800);
+    $('#menu').delay(2500).animate({'margin-left': '1.4em'}, 800);
 
     // head clicked again
     $( this ).click(function() {
       // random sample from expressions
       console.log('ow!')
-      $('header').animate({'margin-left': '-0.2em'}, 100);
-      $('header').animate({'margin-left': '0.2em'}, 100);
+      $('header').animate({'margin-left': '-0.1em'}, 100);
+      $('header').animate({'margin-left': '0.1em'}, 100);
       $('header').animate({'margin-left': '0em'}, 100);
     });
   });
