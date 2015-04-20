@@ -57,10 +57,10 @@ header {
 }
 	#peteFace {
 		min-height: 17em;
-		background: url(../img/meetPete.png), url(../img/meetPeteDarkShadow1.png);
+		background: url(../img/meetPete.png);/*, url(../img/meetPeteDarkShadow1.png);*/
 		background-repeat: no-repeat;
-		background-size: 19em, 19em;
-		background-position: -3em -1.5em, -3.3em -1.5em;
+		background-size: 19em;/*, 19em;*/
+		background-position: -3em -1.5em;/*, -3.3em -1.5em;*/
 		z-index: 20;
 		width: 10em;
 	}
@@ -74,18 +74,25 @@ header {
 	}
 		.pete {
 			margin-left: -100%;
-			background: #DDDAA6;
+			background: #FFF;
 		}
 
 		.user {
 			margin-left: 120%; /*1.4em*/
 			background: #FFE2AC;
 		}
-			.user input {
+			.user input[type="text"] {
 				display: inline;
+				background: #FFEBCA;
 				width: 65%;
 				border: none;
 				box-shadow: -0.1em 0 #fe956a;
+			}
+			.user input[type="submit"] {
+				position: absolute;
+				left: -9999px;
+				width: 1px;
+				height: 1px;
 			}
 		.short {
 			margin-top: -10em;

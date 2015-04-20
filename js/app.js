@@ -30,6 +30,11 @@ $(function() {
     // first user message slides up from bottom
     $('#menu').delay(2900).animate({'margin-left': '1.4em'}, 800);
 
+    // focus on user name textbox
+    setTimeout(function() {
+      $('#user-name-input').focus();
+    }, 3700);
+
     // head clicked again
     $( this ).click(function() {
       // random sample from expressions
@@ -39,6 +44,11 @@ $(function() {
     });
   });
 
+  // hit enter in name text area
+  $('#user-name-input').keypress(function (e) {
+    var key = e.which;
+    if(key == 13) { // enter key code
+      $('#menu')
   // on click of user message option button
 
     // ----- scroll down page
