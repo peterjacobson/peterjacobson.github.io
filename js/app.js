@@ -68,6 +68,7 @@ $(function() {
       slideInMessage('#detached-menu', 400);
     }
   });
+
   // on click of user message option button
 
     // ----- scroll down page

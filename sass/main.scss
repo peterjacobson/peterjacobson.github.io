@@ -28,7 +28,6 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 .rotate180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -36,13 +35,8 @@ html, body {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 .hidden {
  	display: none;
-}
-
-button {
-
 }
 /************End Global**************/
 
@@ -52,7 +46,6 @@ body {
 	min-height: 100%;
 	background: #111;
 }
-
 header {
 }
 	#peteFace {

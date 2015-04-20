@@ -40,7 +40,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 .rotate180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -49,20 +49,20 @@ html, body {
   transform: rotate(180deg);
 }
 
-/* line 40, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
 /************End Global**************/
 /************Structure**************/
-/* line 51, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 body {
   min-height: 100%;
   background: #111;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 #peteFace {
   min-height: 17em;
   background: url(../img/meetPete.png);
@@ -76,7 +76,7 @@ body {
   width: 10em;
 }
 
-/* line 67, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .message {
   margin: 1em 0.3em;
   padding: 0.5em;
@@ -86,20 +86,20 @@ body {
   color: #222;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .pete {
   margin-left: -100%;
   background: #FFF;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .user {
   margin-left: 120%;
   /*1.4em*/
   background: #FFE2AC;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .user input[type="text"] {
   display: inline;
   background: #FFEBCA;
@@ -108,7 +108,7 @@ body {
   box-shadow: -0.1em 0 #fe956a;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .user input[type="submit"] {
   position: absolute;
   left: -9999px;
@@ -116,13 +116,13 @@ body {
   height: 1px;
 }
 
-/* line 98, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .short {
   margin-top: -10em;
   width: 25%;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .option {
   border: none;
   box-shadow: 0em 0.1em #fe956a;
