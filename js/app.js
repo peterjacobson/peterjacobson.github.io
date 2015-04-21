@@ -39,11 +39,15 @@ $(function() {
 
     $('html, body').delay(2000).animate({scrollTop: $('#menu').offset()},1400);
 
-    $('html, body').delay(0).animate({scrollTop: $(document).height()},1400);
     // inflate page-bottom div to lift the input field above the keypad
     $('#page-bottom').delay(2000).css('display', 'block').css('height', '10em');
     // first user message slides in from right
+    setTimeout(function() {
+      $('html, body').animate({scrollTop: $(document).height()},{ duration: 2500, queue: false });
+    }, 2200);
+
     slideInMessage('#menu', 2400);
+
     // focus on user name textbox
     setTimeout(function() {
       $('#user-name-input').focus();
