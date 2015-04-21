@@ -62,11 +62,11 @@ $(function() {
   $('#user-name-input').keypress(function (e) {
     var key = e.which;
     if(key == 13) { // enter key code
+      $('#user-name-input').blur();
       var username = $('#user-name-input').val();
       userMessage = 'Ah, '+username+'! Sorry, you were saying?';
       $('#hi-name p').html(userMessage);
       slideInMessage('#hi-name', 0, 400);
-      $('#hi-name').focus();
       $('#menu-items').appendTo('#detached-menu');
       $('#user-name-input').css('margin-bottom', 0);
       slideInMessage('#detached-menu', 400);
@@ -74,10 +74,16 @@ $(function() {
   });
 
   // on click of user message option button
-
+  $('#portfolio-anchor').one('click', function() {
+    slideInMessage('#portfolio')
+  });
     // ----- scroll down page
 
     //
+
+  // add '#element'
+    // append to active div
+    // slide in from left / right && adjust scroll
 
 
   // INTERACTIONS -----------------------------------------------------------
