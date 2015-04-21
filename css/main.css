@@ -79,27 +79,32 @@ body {
 /* line 60, ../sass/main.scss */
 .message {
   margin: 1em 0.3em;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0;
   width: 92%;
   border-radius: 0.3em;
   box-shadow: 0.2em 0.2em #333;
   color: #222;
 }
 
-/* line 69, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
+.message > * {
+  margin-bottom: 0.5em;
+}
+
+/* line 73, ../sass/main.scss */
 .pete {
   margin-left: -100%;
   background: #FFF;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .user {
   margin-left: 120%;
   /*1.4em*/
   background: #FFE2AC;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .user input[type="text"] {
   display: inline;
   background: #FFEBCA;
@@ -109,7 +114,7 @@ body {
   margin-bottom: 0.5em;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 .user input[type="submit"] {
   position: absolute;
   left: -9999px;
@@ -117,13 +122,13 @@ body {
   height: 1px;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .short {
   margin-top: -10em;
   width: 25%;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .option {
   border: none;
   box-shadow: 0em 0.1em #fe956a;

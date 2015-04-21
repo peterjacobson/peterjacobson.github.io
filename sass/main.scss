@@ -59,13 +59,17 @@ header {
 	}
 	.message {
 		margin: 1em 0.3em;
-		padding: 0.5em;
+		padding: 0.5em 0.5em 0;
 		width: 92%;
 		border-radius: 0.3em;
 		box-shadow: 0.2em 0.2em #333;
 		color: #222;
 		// display: none;
 	}
+
+		.message > * {
+			margin-bottom: 0.5em;
+		}
 		.pete {
 			margin-left: -100%;
 			background: #FFF;
